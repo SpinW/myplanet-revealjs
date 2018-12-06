@@ -1,1 +1,16 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><defs><style>.cls-1{fill:#9292A8;}</style></defs><title>Artboard 1</title><path class="cls-1" d="M45.71,44.57H26.29v4.57H45.71ZM30.2,31.11l.13.26L34.76,40h2.5l4.41-8.58.13-.26V40h3.91V22.86h-4L36.07,33.53l-.06.12L36,33.53,30.27,22.86h-4V40H30.2ZM0,0V72H72V0ZM67.43,67.43H4.57V4.57H67.43Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#9292A8;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#9292A8;stroke-width:4;stroke-miterlimit:10;}
+	.st2{fill:#9292A8;}
+	.st3{font-family:'Silom';}
+	.st4{font-size:28.9317px;}
+</style>
+<title>Artboard 1</title>
+<rect x="0.5" y="0.5" class="st0" width="71" height="71"/>
+<line class="st1" x1="13.1" y1="50" x2="58.9" y2="50"/>
+<text transform="matrix(1 0 0 1 13.1006 37.1675)" class="st2 st3 st4">SW</text>
+</svg>

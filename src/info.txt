@@ -1,0 +1,6 @@
+Based on the MyPlannet theme:
+https://github.com/myplanet
+
+Logo font is:
+Silom
+Which is in Illustrator on OSX. The free versions look terrible :-(

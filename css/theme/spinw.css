@@ -473,6 +473,44 @@ html {
   color: #0D7D7F;
 }
 
+.reveal.pattern--blue-wind {
+  background-image: url("../../lib/spinw/patterns/blue-wind/pattern.svg");
+}
+.reveal.pattern--blue-wind .slides section.intro {
+  background-color: #DEF9F6;
+}
+.reveal.pattern--blue-wind .slides section.intro .logo {
+  background-image: url("../../lib/spinw/patterns/blue-wind/logo.svg");
+}
+.reveal.pattern--blue-wind .slides section.title {
+  background-color: #0D7D7F;
+}
+.reveal.pattern--blue-wind .progress {
+  color: #0D7D7F;
+}
+.reveal.pattern--blue-wind .controls {
+  color: #0D7D7F;
+}
+
+.reveal.pattern--fire-side {
+  background-image: url("../../lib/spinw/patterns/fire-side/pattern.svg");
+}
+.reveal.pattern--fire-side .slides section.intro {
+  background-color: #FCECDB;
+}
+.reveal.pattern--fire-side .slides section.intro .logo {
+  background-image: url("../../lib/spinw/patterns/fire-side/logo.svg");
+}
+.reveal.pattern--fire-side .slides section.title {
+  background-color: #7F2A22;
+}
+.reveal.pattern--fire-side .progress {
+  color: #7F2A22;
+}
+.reveal.pattern--fire-side .controls {
+  color: #7F2A22;
+}
+
 .reveal .slides section.color--dark {
   background-color: #22272B;
   color: #EEEDEF;
@@ -982,4 +1020,4 @@ figure.code figcaption.path {
   font-family: monospace;
 }
 
-/*# sourceMappingURL=spinwBlue.css.map */
+/*# sourceMappingURL=spinw.css.map */
