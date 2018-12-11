@@ -1,0 +1,1060 @@
+//colors
+$color_log_cabin_approx: #222;
+$white: #fff;
+$color_sail_approx: #bee4fd;
+$white_5: rgba(255, 255, 255, 0.05);
+$black_20: rgba(0, 0, 0, 0.2);
+$black_30: rgba(0, 0, 0, 0.3);
+$color_picton_blue_approx: #42affa;
+$color_malibu_approx: #8dcffc;
+$color_azure_radiance_approx: #068de9;
+$white_12: rgba(255, 255, 255, 0.12);
+$black_15: rgba(0, 0, 0, 0.15);
+$white_20: rgba(255, 255, 255, 0.2);
+$black_55: rgba(0, 0, 0, 0.55);
+$alabaster: #fafafa;
+$color_burnt_umber_approx: #872e27;
+$color_white_ice_approx: #def9f6;
+$color_surfie_green_approx: #0d7d7f;
+$color_fair_pink_approx: #ffede9;
+$color_derby_approx: #fcecdb;
+$color_cumin_approx: #8e3e28;
+$color_shark_approx: #22272b;
+$color_gallery_approx: #eeedef;
+$color_manatee_approx: #9292a8;
+$color_salt_box_approx: #66646b;
+$color_port_gore_approx: #2a2a49;
+$color_flamingo_approx: #f25930;
+$color_cape_cod_approx: #3f3f3f;
+$color_mine_shaft_approx: #333;
+
+//fonts
+$font_0: Poppins;
+$font_1: Source Sans Pro;
+$font_2: Helvetica;
+$font_3: sans-serif;
+$font_4: monospace;
+
+//urls
+$url_0: url(../../lib/font/source-sans-pro/source-sans-pro.css);
+$url_1: url(../../lib/font/poppins/poppins.css);
+$url_2: url(../../lib/myplanet/patterns/indigo/pattern.svg);
+$url_3: url(../../lib/myplanet/patterns/indigo/logo.svg);
+$url_4: url(../../lib/myplanet/patterns/molecules/pattern.svg);
+$url_5: url(../../lib/myplanet/patterns/molecules/logo.svg);
+$url_6: url(../../lib/myplanet/patterns/night-sky/pattern.svg);
+$url_7: url(../../lib/myplanet/patterns/night-sky/logo.svg);
+$url_8: url(../../lib/myplanet/patterns/orange-river/pattern.svg);
+$url_9: url(../../lib/myplanet/patterns/orange-river/logo.svg);
+$url_10: url(../../lib/myplanet/patterns/playground/pattern.svg);
+$url_11: url(../../lib/myplanet/patterns/playground/logo.svg);
+$url_12: url(../../lib/myplanet/patterns/stream/pattern.svg);
+$url_13: url(../../lib/myplanet/patterns/stream/logo.svg);
+$url_14: url(../../lib/myplanet/patterns/synapses/pattern.svg);
+$url_15: url(../../lib/myplanet/patterns/synapses/logo.svg);
+$url_16: url(../../lib/myplanet/logo/white/mark-outline.svg);
+$url_17: url(../../lib/myplanet/logo/ice/mark-outline.svg);
+$url_18: url(../../lib/myplanet/logo/white/logo-outline.svg);
+$url_19: url(../../lib/myplanet/logo/black/mark-outline.svg);
+$url_20: url(../../lib/myplanet/logo/radiant-orange/logo-outline.svg);
+
+//@extend-elements
+//original selectors
+//.reveal .slides >section, .reveal .slides >section >section
+%extend_1 {
+	line-height: 1.3;
+	font-weight: inherit;
+	padding: 0;
+}
+
+//original selectors
+//.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6
+%extend_2 {
+	margin: 0 0 20px 0;
+	color: $color_log_cabin_approx;
+	font-family: $font_0, $font_1, $font_2, $font_3;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-transform: none;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: none;
+	word-wrap: break-word;
+	margin-bottom: 2.5vmin;
+	color: inherit;
+}
+
+//original selectors
+//.reveal ol, .reveal dl, .reveal ul
+%extend_3 {
+	display: inline-block;
+	text-align: left;
+	margin: 0 0 0 1em;
+}
+
+//original selectors
+//.reveal table th, .reveal table td
+%extend_4 {
+	text-align: left;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	border-bottom: 1px solid;
+}
+
+
+@import $url_0;
+@import $url_1;
+body {
+	background: $white;
+	background-color: $white;
+}
+.reveal {
+	font-family: $font_0, $font_1, $font_2, $font_3;
+	font-size: inherit;
+	font-weight: normal;
+	color: $color_log_cabin_approx;
+	.slides {
+		text-align: left;
+		> section {
+			@extend %extend_1;
+			> section {
+				@extend %extend_1;
+				&.past {
+					opacity: 1;
+				}
+				&.future {
+					opacity: 1;
+				}
+			}
+			&.past {
+				opacity: 1;
+			}
+			&.future {
+				opacity: 1;
+			}
+		}
+		section {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+			padding: 0;
+			height: 100vh;
+			margin: 0;
+			width: 100vw;
+			color: $color_port_gore_approx;
+			&.color--dark {
+				background-color: $color_shark_approx;
+				color: $color_gallery_approx;
+				.logo {
+					background-image: $url_16;
+				}
+				.section {
+					color: $color_gallery_approx;
+				}
+			}
+			&.color--ice {
+				background-color: $color_manatee_approx;
+				color: $white;
+				.logo {
+					background-image: $url_16;
+				}
+			}
+			&.color--light {
+				background-color: $white;
+				color: $color_salt_box_approx;
+				.logo {
+					background-image: $url_17;
+				}
+			}
+			&.color--midnight {
+				background-color: $color_port_gore_approx;
+				color: $white;
+				.logo {
+					background-image: $url_16;
+				}
+			}
+			&.color--radiant {
+				background-color: $color_flamingo_approx;
+				color: $white;
+				.logo {
+					background-image: $url_16;
+				}
+			}
+			&:not([class*='color--']) {
+				background-color: $white;
+			}
+			&.stack {
+				background-color: transparent;
+			}
+			.grid-wrapper {
+				//Instead of the line below you could use @include box-sizing($bs)
+				box-sizing: border-box;
+				grid-column-gap: 10vmin;
+				grid-row-gap: 5vmin;
+				grid-template-areas: "header" "content";
+				grid-template-rows: 4.5vmin 1fr;
+				height: 100%;
+				padding: 10vmin;
+			}
+			.header {
+				align-items: center;
+				display: flex;
+				grid-area: header;
+			}
+			.logo {
+				background-image: $url_17;
+				background-repeat: no-repeat;
+				background-size: auto 100%;
+				display: inline-block;
+				grid-area: header;
+				height: 4.5vmin;
+				margin-right: 4.5vmin;
+				width: 4.5vmin;
+			}
+			.section {
+				text-transform: uppercase;
+				line-height: 4.5vmin;
+				font-size: 0.6em;
+				font-weight: bold;
+			}
+			.content {
+				align-self: center;
+				grid-area: content;
+			}
+			&.intro {
+				height: calc(100vh - 8vmin);
+				margin: 4vmin;
+				width: calc(100vw - 8vmin);
+				.logo-wrapper {
+					display: flex;
+					height: 100%;
+				}
+				.logo {
+					background-position: center;
+					background-size: contain;
+					height: auto;
+					margin: auto;
+					min-height: 200px;
+					min-width: 200px;
+					width: 33%;
+				}
+			}
+			&.title {
+				height: calc(100vh - 8vmin);
+				margin: 4vmin;
+				width: calc(100vw - 8vmin);
+				color: $white;
+				margin-left: 22vw;
+				width: calc(100vw - 4vmin - 22vw);
+				.grid-wrapper {
+					grid-template-areas: "header header" "content content" ". credit";
+					grid-template-columns: auto 40%;
+					grid-template-rows: 6vmin 1fr auto;
+					grid-column-gap: 10vmin;
+				}
+				.logo {
+					background-image: $url_16;
+					height: 6vmin;
+					width: 6vmin;
+				}
+				.logo--full {
+					background-image: $url_18;
+					width: 24vmin;
+				}
+				.content {
+					align-self: center;
+					grid-area: content;
+				}
+				h1 {
+					color: $white;
+				}
+				.credit {
+					align-self: end;
+					grid-area: credit;
+					line-height: 1.8em;
+					hr {
+						border: solid $color_gallery_approx;
+						border-width: 1px 0 0 0;
+						margin: 0 0 .8em 0;
+						width: 20%;
+					}
+					.label {
+						font-size: 60%;
+						text-transform: uppercase;
+					}
+					.name {
+						font-weight: bold;
+					}
+				}
+			}
+			&.subsection {
+				.grid-wrapper {
+					grid-template-areas: "header" "title" "description";
+					grid-template-rows: 4.5vmin 3fr 1fr;
+				}
+				h1 {
+					align-self: center;
+					grid-area: title;
+					margin: 0;
+				}
+				.description {
+					color: $color_manatee_approx;
+					grid-area: description;
+					min-height: 4em;
+				}
+				&:not([class*='color--']) .logo {
+					background-image: $url_19;
+				}
+				&.color--light .logo {
+					background-image: $url_19;
+				}
+				&.color--midnight .description {
+					color: $color_gallery_approx;
+				}
+				&.color--ice .description {
+					color: $color_gallery_approx;
+				}
+				&.color--radiant .description {
+					color: $color_gallery_approx;
+				}
+			}
+			&.quote {
+				blockquote {
+					align-self: center;
+					background: none;
+					color: $color_salt_box_approx;
+					border: none;
+					//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+					box-shadow: none;
+					font-size: 2em;
+					font-style: normal;
+					margin: 0;
+					max-width: 42ex;
+					padding: 0;
+					width: 100%;
+				}
+				hr {
+					border: solid $color_manatee_approx;
+					border-width: 1px 0 0 0;
+					margin: .8em 0;
+					width: 10%;
+				}
+				cite {
+					color: $color_manatee_approx;
+					display: block;
+					font-size: 1rem;
+				}
+				&.color--midnight {
+					blockquote {
+						color: $white;
+					}
+					hr {
+						border-color: $color_gallery_approx;
+					}
+					cite {
+						color: $color_gallery_approx;
+					}
+				}
+				&.color--ice {
+					blockquote {
+						color: $white;
+					}
+					hr {
+						border-color: $color_gallery_approx;
+					}
+					cite {
+						color: $color_gallery_approx;
+					}
+				}
+				&.color--radiant {
+					blockquote {
+						color: $white;
+					}
+					hr {
+						border-color: $color_gallery_approx;
+					}
+					cite {
+						color: $color_gallery_approx;
+					}
+				}
+			}
+			&.team {
+				.content {
+					display: grid;
+					grid-auto-columns: 1fr;
+					grid-auto-rows: 1fr;
+					grid-auto-flow: column;
+					grid-column-gap: 10vmin;
+					grid-row-gap: 5vmin;
+				}
+				.profile {
+					display: grid;
+					grid-column-gap: 5vmin;
+					grid-template-rows: 15vmin 1fr;
+				}
+				h2 {
+					color: $color_manatee_approx;
+					font-size: inherit;
+					margin-bottom: 0.5em;
+				}
+				p {
+					&:first-of-type {
+						margin-top: 0;
+					}
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+				img {
+					display: block;
+					float: left;
+					height: auto;
+					margin-right: 5vmin;
+					width: auto;
+				}
+				.name {
+					margin: 0.6em 0;
+				}
+				.role {
+					color: $color_manatee_approx;
+					font-size: 0.8em;
+					margin: 0.6em 0;
+				}
+				.supplement {
+					font-size: .8em;
+					color: $color_manatee_approx;
+				}
+			}
+			&.end {
+				height: 100vh;
+				margin: 0;
+				width: 100vw;
+				.logo-wrapper {
+					display: flex;
+					height: 100%;
+				}
+				.logo {
+					background-image: $url_20;
+					background-position: center;
+					background-size: contain;
+					height: auto;
+					margin: auto;
+					min-height: 200px;
+					min-width: 200px;
+					width: 33%;
+				}
+				&.color--radiant .logo {
+					background-image: $url_18;
+				}
+			}
+			&:not([class*="color--"]) .section {
+				color: $color_manatee_approx;
+			}
+		}
+	}
+	h1 {
+		@extend %extend_2;
+		font-size: 2.5em;
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: none;
+	}
+	h2 {
+		@extend %extend_2;
+		font-size: 1.6em;
+	}
+	h3 {
+		@extend %extend_2;
+		font-size: 1.3em;
+	}
+	h4 {
+		@extend %extend_2;
+		font-size: 1em;
+	}
+	h5 {
+		@extend %extend_2;
+	}
+	h6 {
+		@extend %extend_2;
+	}
+	p {
+		margin: 20px 0;
+		line-height: 1.3;
+	}
+	img {
+		max-width: 95%;
+		max-height: 95%;
+	}
+	video {
+		max-width: 95%;
+		max-height: 95%;
+	}
+	iframe {
+		max-width: 95%;
+		max-height: 95%;
+	}
+	strong {
+		font-weight: bold;
+	}
+	b {
+		font-weight: bold;
+	}
+	em {
+		font-style: italic;
+	}
+	ol {
+		@extend %extend_3;
+		list-style-type: decimal;
+		ol {
+			display: block;
+			margin-left: 40px;
+		}
+		ul {
+			display: block;
+			margin-left: 40px;
+		}
+	}
+	dl {
+		@extend %extend_3;
+	}
+	ul {
+		@extend %extend_3;
+		list-style-type: disc;
+		ul {
+			list-style-type: square;
+			display: block;
+			margin-left: 40px;
+			ul {
+				list-style-type: circle;
+			}
+		}
+		ol {
+			display: block;
+			margin-left: 40px;
+		}
+	}
+	dt {
+		font-weight: bold;
+	}
+	dd {
+		margin-left: 40px;
+	}
+	blockquote {
+		display: block;
+		position: relative;
+		width: 70%;
+		margin: 20px auto;
+		padding: 5px;
+		font-style: italic;
+		background: $white_5;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $black_20;
+		p {
+			&:first-child {
+				display: inline-block;
+				display: block;
+			}
+			&:last-child {
+				display: inline-block;
+				display: block;
+			}
+		}
+	}
+	q {
+		font-style: italic;
+	}
+	pre {
+		display: block;
+		position: relative;
+		width: 90%;
+		margin: 20px auto;
+		text-align: left;
+		font-size: 0.55em;
+		font-family: $font_4;
+		line-height: 1.2em;
+		word-wrap: break-word;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 6px $black_30;
+		code {
+			display: block;
+			padding: 5px;
+			overflow: auto;
+			max-height: 400px;
+			word-wrap: normal;
+			background-color: $color_cape_cod_approx;
+			border: 1ex solid $color_cape_cod_approx;
+			border-width: 1ex 2ex;
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+			height: 100%;
+			max-height: none;
+			tab-size: 2;
+		}
+	}
+	code {
+		font-family: $font_4;
+		text-transform: none;
+	}
+	table {
+		margin: auto;
+		border-collapse: collapse;
+		border-spacing: 0;
+		th {
+			font-weight: bold;
+			@extend %extend_4;
+		}
+		td {
+			@extend %extend_4;
+		}
+		th[align="center"] {
+			text-align: center;
+		}
+		td[align="center"] {
+			text-align: center;
+		}
+		th[align="right"] {
+			text-align: right;
+		}
+		td[align="right"] {
+			text-align: right;
+		}
+		tbody tr:last-child {
+			th {
+				border-bottom: none;
+			}
+			td {
+				border-bottom: none;
+			}
+		}
+	}
+	sup {
+		vertical-align: super;
+	}
+	sub {
+		vertical-align: sub;
+	}
+	small {
+		display: inline-block;
+		font-size: 0.6em;
+		line-height: 1.2em;
+		vertical-align: top;
+		* {
+			vertical-align: top;
+		}
+	}
+	a {
+		color: $color_picton_blue_approx;
+		text-decoration: none;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: color .15s ease;
+		&:hover {
+			color: $color_malibu_approx;
+			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			text-shadow: none;
+			border: none;
+			img {
+				background: $white_20;
+				border-color: $color_picton_blue_approx;
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 20px $black_55;
+			}
+		}
+		img {
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: all .15s linear;
+		}
+	}
+	.controls {
+		color: $color_picton_blue_approx;
+		right: 4vmin;
+		bottom: 4vmin;
+	}
+	.progress {
+		background: $black_20;
+		color: $color_picton_blue_approx;
+		span {
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+		}
+	}
+	&.pattern--indigo {
+		background-image: $url_2;
+		.progress {
+			color: $color_burnt_umber_approx;
+		}
+		.controls {
+			color: $color_burnt_umber_approx;
+		}
+		.slides section {
+			&.intro {
+				background-color: $alabaster;
+				.logo {
+					background-image: $url_3;
+				}
+			}
+			&.title {
+				background-color: $color_burnt_umber_approx;
+			}
+		}
+	}
+	&.pattern--molecules {
+		background-image: $url_4;
+		.progress {
+			color: $color_burnt_umber_approx;
+		}
+		.controls {
+			color: $color_burnt_umber_approx;
+		}
+		.slides section {
+			&.intro {
+				background-color: $alabaster;
+				.logo {
+					background-image: $url_5;
+				}
+			}
+			&.title {
+				background-color: $color_burnt_umber_approx;
+			}
+		}
+	}
+	&.pattern--night-sky {
+		background-image: $url_6;
+		.progress {
+			color: $color_surfie_green_approx;
+		}
+		.controls {
+			color: $color_surfie_green_approx;
+		}
+		.slides section {
+			&.intro {
+				background-color: $color_white_ice_approx;
+				.logo {
+					background-image: $url_7;
+				}
+			}
+			&.title {
+				background-color: $color_surfie_green_approx;
+			}
+		}
+	}
+	&.pattern--orange-river {
+		background-image: $url_8;
+		.progress {
+			color: $color_burnt_umber_approx;
+		}
+		.controls {
+			color: $color_burnt_umber_approx;
+		}
+		.slides section {
+			&.intro {
+				background-color: $color_fair_pink_approx;
+				.logo {
+					background-image: $url_9;
+				}
+			}
+			&.title {
+				background-color: $color_burnt_umber_approx;
+			}
+		}
+	}
+	&.pattern--playground {
+		background-image: $url_10;
+		.progress {
+			color: $color_cumin_approx;
+		}
+		.controls {
+			color: $color_cumin_approx;
+		}
+		.slides section {
+			&.intro {
+				background-color: $color_derby_approx;
+				.logo {
+					background-image: $url_11;
+				}
+			}
+			&.title {
+				background-color: $color_cumin_approx;
+			}
+		}
+	}
+	&.pattern--stream {
+		background-image: $url_12;
+		.progress {
+			color: $color_surfie_green_approx;
+		}
+		.controls {
+			color: $color_surfie_green_approx;
+		}
+		.slides section {
+			&.intro {
+				background-color: $color_white_ice_approx;
+				.logo {
+					background-image: $url_13;
+				}
+			}
+			&.title {
+				background-color: $color_surfie_green_approx;
+			}
+		}
+	}
+	&.pattern--synapses {
+		background-image: $url_14;
+		.progress {
+			color: $color_surfie_green_approx;
+		}
+		.controls {
+			color: $color_surfie_green_approx;
+		}
+		.slides section {
+			&.intro {
+				background-color: $color_white_ice_approx;
+				.logo {
+					background-image: $url_15;
+				}
+			}
+			&.title {
+				background-color: $color_surfie_green_approx;
+			}
+		}
+	}
+	.roll span:after {
+		color: $white;
+		background: $color_azure_radiance_approx;
+	}
+	section img {
+		margin: 15px 0;
+		background: $white_12;
+		border: 4px solid $color_log_cabin_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 10px $black_15;
+		background: none;
+		border: none;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+		margin: 0;
+		&.plain {
+			border: 0;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+		}
+	}
+}
+::selection {
+	color: $white;
+	background: $color_sail_approx;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: none;
+}
+::-moz-selection {
+	color: $white;
+	background: $color_sail_approx;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: none;
+}
+html {
+	font-size: 2.25vmin;
+}
+@media(max-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+	.reveal {
+		.controls {
+			right: 2vmin;
+			bottom: 2vmin;
+		}
+		.slides section {
+			&.intro {
+				height: calc(100vh - 4vmin);
+				margin: 2vmin;
+				width: calc(100vw - 4vmin);
+			}
+			&.title {
+				height: calc(100vh - 4vmin);
+				margin: 2vmin;
+				width: calc(100vw - 4vmin);
+			}
+			&.team .content {
+				grid-auto-flow: row;
+			}
+		}
+	}
+}
+@media(max-width: 568px) {
+	html {
+		font-size: 14px;
+	}
+	.reveal .slides section {
+		&.title {
+			.grid-wrapper {
+				grid-template-areas: "header" "content" "credit";
+				grid-template-columns: auto;
+			}
+			.credit {
+				justify-self: end;
+			}
+		}
+		&.team {
+			.content {
+				grid-auto-flow: row;
+			}
+			.profile {
+				grid-template-rows: auto;
+				align-items: center;
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-column-gap: 5vmin;
+			}
+			.details {
+				display: none;
+			}
+			img {
+				float: left;
+				height: auto;
+				margin-right: 5vmin;
+				max-height: 50%;
+				max-width: 40%;
+				width: auto;
+			}
+		}
+	}
+}
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	word-wrap: normal;
+}
+.reveal[class*="pattern--"] {
+	background-position: center center;
+	background-size: 133vmax auto;
+}
+.grid-wrapper {
+	display: grid;
+}
+@media(min-width: 1280px) {
+	.reveal .slides section {
+		&.title {
+			.content {
+				display: grid;
+				grid-template-areas: "title description";
+				grid-template-columns: auto 40%;
+				grid-column-gap: 10vmin;
+			}
+			h1 {
+				grid-area: title;
+			}
+			.description {
+				grid-area: description;
+				margin-top: 0.5em;
+			}
+		}
+		&.team {
+			img {
+				float: none;
+				max-width: none;
+				max-height: 100%;
+				width: 100%;
+			}
+			.profile {
+				grid-template-rows: auto;
+				grid-template-columns: 1fr 3fr;
+				&:first-child:nth-last-child(1) {
+					justify-self: center;
+					padding: 0 10vmin;
+				}
+			}
+		}
+	}
+}
+@media not all and(max-width: 768px) {
+	.reveal .slides section.team .profile:first-child:nth-last-child(1) {
+		grid-template-rows: auto;
+		grid-template-columns: 1fr 4fr;
+		img {
+			float: none;
+			max-width: none;
+			max-height: none;
+			width: 100%;
+		}
+	}
+}
+@media(max-width: 768px) and(orientation: landscape) {
+	.reveal .slides section.team {
+		.content {
+			grid-auto-flow: column;
+		}
+		.profile {
+			grid-template-rows: auto;
+			align-items: center;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-column-gap: 5vmin;
+		}
+		.details {
+			display: none;
+		}
+		img {
+			float: left;
+			height: auto;
+			margin-right: 5vmin;
+			max-height: 50%;
+			max-width: 40%;
+			width: auto;
+		}
+	}
+}
+section.has-light-background {
+	color: $color_log_cabin_approx;
+	h1 {
+		color: $color_log_cabin_approx;
+	}
+	h2 {
+		color: $color_log_cabin_approx;
+	}
+	h3 {
+		color: $color_log_cabin_approx;
+	}
+	h4 {
+		color: $color_log_cabin_approx;
+	}
+	h5 {
+		color: $color_log_cabin_approx;
+	}
+	h6 {
+		color: $color_log_cabin_approx;
+	}
+}
+figure.code {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	pre {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+		font-size: 1rem;
+		height: 100%;
+		line-height: 1.1rem;
+		margin: 0;
+		width: 100%;
+		overflow: hidden;
+		+ figcaption {
+			border-top-width: 0;
+			border-bottom-width: 1px;
+			color: $color_gallery_approx;
+		}
+	}
+	figcaption {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		padding: 1ex 2ex;
+		width: 100%;
+		font-size: 0.875em;
+		border: 1px solid $color_cape_cod_approx;
+		border-bottom-width: 0;
+		background-color: $color_mine_shaft_approx;
+		text-align: left;
+		&.path {
+			font-family: $font_4;
+		}
+	}
+}
