@@ -1,3 +1,6 @@
 [submodule "plugin/function-plot"]
 	path = plugin/function-plot
 	url = https://github.com/mauriciopoppe/function-plot.git
+[submodule "plugin/menu"]
+	path = plugin/menu
+	url = https://github.com/denehyg/reveal.js-menu.git

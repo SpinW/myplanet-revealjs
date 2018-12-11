@@ -342,7 +342,7 @@
 	 */
 	function convertSlides() {
 
-		var sections = document.querySelectorAll( '[data-markdown]');
+		var sections = document.querySelectorAll( '[class^="data-markdown"]');
 
 		for( var i = 0, len = sections.length; i < len; i++ ) {
 
@@ -358,11 +358,11 @@
 
 				section.innerHTML = marked( markdown );
 				addAttributes( 	section, section, null, section.getAttribute( 'data-element-attributes' ) ||
-								section.parentNode.getAttribute( 'data-element-attributes' ) ||
-								DEFAULT_ELEMENT_ATTRIBUTES_SEPARATOR,
-								section.getAttribute( 'data-attributes' ) ||
-								section.parentNode.getAttribute( 'data-attributes' ) ||
-								DEFAULT_SLIDE_ATTRIBUTES_SEPARATOR);
+					section.parentNode.getAttribute( 'data-element-attributes' ) ||
+					DEFAULT_ELEMENT_ATTRIBUTES_SEPARATOR,
+					section.getAttribute( 'data-attributes' ) ||
+					section.parentNode.getAttribute( 'data-attributes' ) ||
+					DEFAULT_SLIDE_ATTRIBUTES_SEPARATOR);
 
 				// If there were notes, we need to re-add them after
 				// having overwritten the section's HTML
