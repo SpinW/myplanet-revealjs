@@ -51,6 +51,7 @@ var RevealAnything = window.RevealAnything || (function(){
 			// Get all elements of the class
 			var elements = document.getElementsByClassName(config[i].className);
 			var initialize = config[i].initialize;
+
 			// deprecated parameters
 			if ( !initialize && config[i].f ) {
 				initialize = config[i].f;

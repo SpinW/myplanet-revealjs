@@ -946,6 +946,14 @@ html {
   }
 }
 
+.reveal .slides section.showit .iframe {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: column;
+  grid-column-gap: 10vmin;
+  grid-row-gap: 5vmin;
+}
 .reveal .slides section.showit .content {
   display: grid;
   grid-auto-columns: 1fr;

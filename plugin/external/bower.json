@@ -1,27 +1,22 @@
 {
-  "name": "external-js",
-  "authors": [
-    "Cal Evans <cal@calevans.com>",
-    "Matthew Setter <matthew@matthewsetter.com>"
-  ],
-  "description": "External file importer for reveal.js",
-  "version": "1.0.1",
-  "main": "external/external.js",
-  "keywords": [
-    "reveal.js",
-    "external.js"
-  ],
+  "name": "reveal_external",
+  "version": "1.3.0",
+  "description": "Plugin for reveal.js to import external sections.",
+  "homepage": "https://github.com/janschoepke/reveal_external#readme",
   "license": "MIT",
-  "homepage": "https://github.com/settermjd/external",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/calevans/external.git"
-  },
+  "authors": [
+    "Jan Schoepke"
+  ],
+  "keywords": [
+    "reveal",
+    "external",
+    "xhr"
+  ],
+  "main": [
+    "src/external.js"
+  ],
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "example/"
   ]
 }
