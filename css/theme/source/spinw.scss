@@ -681,8 +681,8 @@ html {
 		grid-column-gap: $slidePadding;
 		grid-row-gap: $slidePadding/2;
 		overflow:hidden;
-		height=100%;
-		width=100%
+		height: 100%;
+		width: 100%;
 	}
 
 	.profile {
@@ -908,3 +908,23 @@ figure.code figcaption.path {
 	font-family: monospace;
 }
 
+figure.image {
+	width: 30%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-indent: 0;
+	padding: 0.5em;
+}
+
+figure.image img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure.image figcaption.text{
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+}

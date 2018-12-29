@@ -961,6 +961,9 @@ html {
   grid-auto-flow: column;
   grid-column-gap: 10vmin;
   grid-row-gap: 5vmin;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 .reveal .slides section.showit .profile {
   display: grid;
@@ -1163,6 +1166,27 @@ figure.code pre + figcaption {
 
 figure.code figcaption.path {
   font-family: monospace;
+}
+
+figure.image {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: 0;
+  padding: 0.5em;
+}
+
+figure.image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure.image figcaption.text {
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=spinw.css.map */
