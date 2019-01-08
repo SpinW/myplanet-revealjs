@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'chicagobold';
+    src: url('chicagobold-webfont.woff2') format('woff2'),
+         url('chicagobold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
